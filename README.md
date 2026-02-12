@@ -1,13 +1,13 @@
-# 💕 Valentine's Day Game
+# 💕 Valentine's Day Game for My Princess
 
-An interactive Valentine's Day game where your special someone can answer the sweetest question!
+An interactive Valentine's Day game created for My Princess — the sweetest question, with a playful dodge and a shy teddy surprise!
 
 ## 🎮 How It Works
 
-- Your loved one receives a link to this interactive game
-- They see the question: **"Will you be my Valentine?"**
-- Option 1: Click **"Yes!"** and they'll see a beautiful gift reveal with confetti! 🎁✨
-- Option 2: Click **"No"** and the button will playfully dodge away from their cursor 😄
+- My Princess receives a link to this interactive game
+- She sees the question: **"Will you be my Valentine, My Princess?"**
+- Option 1: Click **"Yes, My Princess!"** and she'll see a shy teddy reveal with confetti! 🎁✨
+- Option 2: Click **"No, My Princess"** and the button will playfully dodge away from the cursor 😄
 
 ## 🚀 Play the Game
 
