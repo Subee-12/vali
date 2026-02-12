@@ -13,6 +13,10 @@ An interactive Valentine's Day game created for My Princess — the sweetest que
 
 Visit: https://subee-12.github.io/vali/
 
+Scan to open on your phone:
+
+![QR code](https://chart.googleapis.com/chart?chs=220x220&cht=qr&chl=https://subee-12.github.io/vali/)
+
 ## 📝 Features
 
 ✨ Beautiful romantic design  

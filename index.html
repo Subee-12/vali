@@ -158,6 +158,26 @@
             100% { opacity: 0; transform: translateY(-80px) scale(1.05); }
         }
 
+        /* Desktop vs Mobile behaviour */
+        /* By default show desktop notice hidden; mobile will show game */
+        #desktopNotice { display: none; }
+        @media (min-width: 601px) {
+            /* On larger screens, hide game containers and show desktop notice */
+            #questionContainer, #giftContainer { display: none !important; }
+            #desktopNotice { display: block; }
+        }
+
+        @media (max-width: 600px) {
+            /* Mobile: enlarge touch targets */
+            body { padding: 12px; }
+            .container { padding: 30px 18px; border-radius: 14px; }
+            #yesBtn, #noBtn { padding: 18px 28px; font-size: 20px; }
+            .restart-btn { padding: 14px 28px; font-size: 18px; }
+            .heart-gif { width: 180px; height: 180px; }
+            .heart-svg { width: 120px; height: 120px; }
+            .heart-text { font-size: 22px; }
+        }
+
         @keyframes bounce {
             0%, 100% {
                 transform: translateY(0);
@@ -220,6 +240,14 @@
     </style>
 </head>
 <body>
+    <!-- Desktop notice: ask to open on mobile -->
+    <div id="desktopNotice" class="container hidden">
+        <h2>Open op je telefoon</h2>
+        <p>Deze interactieve verrassing werkt het beste op een mobiel apparaat. Open deze pagina op je telefoon om de game te spelen.</p>
+        <p style="margin-top:12px;">Link: <a href="https://subee-12.github.io/vali/" target="_blank">subee-12.github.io/vali/</a></p>
+        <p style="margin-top:12px;">Of scan deze QR met je telefoon:</p>
+        <img src="https://chart.googleapis.com/chart?chs=220x220&cht=qr&chl=https://subee-12.github.io/vali/" alt="QR code to open on phone" style="width:180px;height:180px;margin-top:8px;border-radius:8px;">
+    </div>
     <!-- Question Container -->
     <div class="container" id="questionContainer">
         <div class="heart">❤️</div>
