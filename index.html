@@ -138,24 +138,31 @@
         /* Heart GIF-like animation */
         .heart-gif { position: relative; width: 220px; height: 220px; margin: 0 auto; }
         .heart-shape {
-            position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) scale(1);
-            width: 140px; height: 140px; background: red; transform-origin: center; border-radius: 70px 70px 0 0; rotate: 45deg;
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 140px; height: 140px;
+            background: red;
+            transform: translate(-50%,-50%) rotate(45deg);
+            border-radius: 20px;
             box-shadow: 0 8px 20px rgba(231,76,60,0.35);
             animation: heartBeat 1s infinite;
         }
         .heart-shape::before, .heart-shape::after {
             content: '';
-            position: absolute; width: 140px; height: 140px; background: red; border-radius: 50%;
+            position: absolute;
+            width: 140px; height: 140px;
+            background: red;
+            border-radius: 50%;
         }
-        .heart-shape::before { left: -70px; top: 0; }
-        .heart-shape::after { left: 0; top: -70px; }
-        .heart-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: white; font-weight: 900; font-size: 28px; letter-spacing: 2px; }
+        .heart-shape::before { top: -70px; left: 0; }
+        .heart-shape::after { left: 70px; top: 0; }
+        .heart-text { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-45deg); color: white; font-weight: 900; font-size: 28px; letter-spacing: 2px; z-index: 2; }
 
         @keyframes heartBeat {
-            0% { transform: translate(-50%,-50%) scale(1); }
-            30% { transform: translate(-50%,-50%) scale(1.15); }
-            60% { transform: translate(-50%,-50%) scale(0.95); }
-            100% { transform: translate(-50%,-50%) scale(1); }
+            0% { transform: translate(-50%,-50%) rotate(45deg) scale(1); }
+            30% { transform: translate(-50%,-50%) rotate(45deg) scale(1.15); }
+            60% { transform: translate(-50%,-50%) rotate(45deg) scale(0.95); }
+            100% { transform: translate(-50%,-50%) rotate(45deg) scale(1); }
         }
 
         /* 'My Princess' overlay texts */
@@ -250,7 +257,7 @@
         </div>
         <div class="gift-message">Yes! 🎉</div>
         <p class="love-message">
-            You're so special and amazing! 💕
+            You're so special and amazing Mr Strong starts loving you 💕
         </p>
         <button class="restart-btn" onclick="location.reload()">Back</button>
         <!-- overlay container for many 'My Princess' texts -->
